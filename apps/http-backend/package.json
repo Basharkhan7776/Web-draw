@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc -b && node index.js",
-    "start": "node index.js",
-    "build": "tsc -p tsconfig.json"
+    "start": "node dist/index.js",
+    "dev": "tsc -b && node ./dist/index.js",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.8",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "@repo/backend-common": "workspace:*"
+  }
 }
